@@ -14,4 +14,6 @@ class stig_configuration {
   include "stig_configuration::stig_m_v_230389"
   include "stig_configuration::stig_m_v_230388"
   include "stig_configuration::stig_m_v_230369"
+  include "stig_configuration::stig_l_v_230253"
+  include "stig_configuration::stig_m_v_230255"
 }

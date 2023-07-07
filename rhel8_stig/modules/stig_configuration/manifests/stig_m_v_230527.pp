@@ -39,4 +39,11 @@ class stig_configuration::stig_m_v_230527 {
       notify  => Service['sshd']
   }
 
+  file_line { ' V-230555 - /etc/ssh/sshd_config':
+      line   => "X11Forwarding no",
+      path   => "/etc/ssh/sshd_config",
+      match  => "^X11Forwarding",
+      notify  => Service['sshd']
+  }
+
 }
